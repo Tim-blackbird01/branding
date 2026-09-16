@@ -8,34 +8,18 @@ interface BrandLogo {
 
 const BRAND_LOGOS: BrandLogo[] = [
   {
-    id: 'kibo',
-    name: 'Kibo Roast Co.',
-    renderLogo: () => (
-      <div className="flex items-center gap-3 select-none">
-        {/* Mountain + Coffee Bean Crest */}
-        <svg
-          className="w-8 h-8 text-[#1f7a63] group-hover:text-white transition-colors duration-300"
-          viewBox="0 0 32 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="16" cy="16" r="14" stroke="currentColor" strokeWidth="1.75" />
-          <path
-            d="M9 20L14 12L17 17L20 13L24 20H9Z"
-            fill="currentColor"
-            fillOpacity="0.25"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinejoin="round"
-          />
-          <circle cx="16" cy="9" r="1.5" fill="currentColor" />
-        </svg>
-        <span className="font-serif tracking-[0.2em] text-sm sm:text-base font-bold uppercase text-white/80 group-hover:text-white transition-colors">
-          KIBO
-        </span>
-      </div>
-    ),
-  },
+  id: 'kibo',
+  name: 'Kibo Roast Co.',
+  renderLogo: () => (
+    <div className="flex items-center select-none">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TpviQDx5FDqOlJxZcw3W54w1Oe4vf2HpKrdMSWQqTsjU1UtzX94WX7t5&s=10"
+        alt="Kibo Roast Co. logo"
+        className="w-12 h-12 sm:w-14 sm:h-14 object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
+      />
+    </div>
+  ),
+},
   {
     id: 'savanna',
     name: 'Savanna & Silk',

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { ATELIER_IMAGE } from '../data/studioData';
+import aboutAtelierImage from '../assets/images/About-atelier.jpg';
 
 export const AboutIntro: React.FC = () => {
   return (
@@ -12,14 +12,18 @@ export const AboutIntro: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+
           {/* Left Column: Heading, Story & Link */}
           <div className="lg:col-span-7">
+
             {/* Section Tag */}
             <div className="flex items-center gap-2 mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1f7a63]" />
+
               <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] font-mono text-[#1f7a63] font-semibold">
                 About ShelterBrand
               </span>
+
               <span className="text-[10px] sm:text-[11px] font-mono text-[#081c2d]/40">
                 · Nairobi, Kenya
               </span>
@@ -42,11 +46,12 @@ export const AboutIntro: React.FC = () => {
               className="inline-flex items-center gap-2 text-xs font-mono font-semibold uppercase tracking-wider text-[#1f7a63] hover:text-[#081c2d] transition-colors group"
             >
               <span>Explore Our Full Story & Philosophy</span>
+
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
 
-          {/* Right Column: Visual Atelier Image */}
+          {/* Right Column: Your Custom Image */}
           <div className="lg:col-span-5">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -57,14 +62,14 @@ export const AboutIntro: React.FC = () => {
             >
               <div className="aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-black/10">
                 <img
-                  src={ATELIER_IMAGE}
+                  src={aboutAtelierImage}
                   alt="ShelterBrand production atelier in Westlands, Nairobi"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </motion.div>
           </div>
+
         </div>
       </div>
     </section>

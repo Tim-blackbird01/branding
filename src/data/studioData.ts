@@ -29,6 +29,14 @@ export const OFFICE_BRANDING_IMAGE = '/src/assets/images/officebrand.svg';
 export const LEGAL_IMAGE = '/src/assets/images/legal.svg';
 export const PACKAGES_IMAGE = '/src/assets/images/packaging.svg';
 export const FLEET_IMAGE = '/src/assets/images/fleet.svg'; 
+export const DIGITAL_PRINT_IMAGE = '/src/assets/images/Digital_Printing2.jpg';
+export const UV_PRINT_IMAGE = '/src/assets/images/uv_printing.png';
+export const DTF_IMAGE = '/src/assets/images/dtf.jpg';
+export const VINYL_PRINT_IMAGE = '/src/assets/images/vinyl.jpg';
+export const LASER_ENGRAVING_IMAGE = '/src/assets/images/laser_engraving.jpg';
+export const EMBROIDERY_IMAGE = '/src/assets/images/embroidery.jpg';
+export const LARGE_PRINTING_IMAGE = '/src/assets/images/large_printing.jpg';
+export const SUBLIMATION_IMAGE = '/src/assets/images/Sublimation.jpg';
 
 export const HERO_SLIDES = [
   {
@@ -38,7 +46,7 @@ export const HERO_SLIDES = [
     location: 'Atelier Archive · 2025',
   },
   {
-    image: PRINT_READY_GRAPHIC_DESIGN_IMAGE,
+    image: VINYL_PRINT_IMAGE,
     alt: 'Master Heidelberg letterpress and vintage cylinder relief machine in Westlands Nairobi',
     label: 'Letterpress & Relief Printing',
     location: 'The Mirage Atelier · Nairobi',
@@ -100,7 +108,7 @@ export const STUDIO_DETAILS = {
     {
       name: 'WhatsApp Business',
       handle: '+254 719 480 320',
-      url: 'https://wa.me/254719480320?text=Hello%20ShelterBrand%2C%20I%27d%20like%20to%20inquire%20about%20a%20branding%20and%20print%20project',
+      url: 'https://wa.me/254768737198?text=Hello%20ShelterBrand%2C%20I%27d%20like%20to%20inquire%20about%20a%20branding%20and%20print%20project',
       description: 'Instant press & quotation chat',
     },
   ],
@@ -223,7 +231,7 @@ export const SERVICES: Service[] = [
     ],
     ctaText: 'Explore branding →',
     tag: 'Fleet, Murals & Window Graphics',
-    image: STICKERS_WALL_VEHICLE_BRANDING_IMAGE,
+    image: FLEET_IMAGE,
   },
   {
     number: '07',
@@ -354,8 +362,7 @@ export const NINE_PROCESSES: InHouseProcess[] = [
     title: 'Digital Printing',
     description:
       'Short-to-medium runs with fast setup: the workhorse behind cards, flyers, profiles and everyday collateral.',
-    image:
-      'https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=1200&q=80',
+    image: DIGITAL_PRINT_IMAGE,
     tag: 'Commercial & Collateral',
     substrates: ['300–600gsm Artcards', 'Textured Linen', 'Kraft Paper', 'Synthetic Tear-Proof'],
     bestFor: 'Cards, flyers, company profiles & fast-turnaround collateral',
@@ -365,8 +372,7 @@ export const NINE_PROCESSES: InHouseProcess[] = [
     title: 'UV Printing',
     description:
       'Ink cured instantly with ultraviolet light, so it prints onto rigid and awkward surfaces, acrylic, wood, metal, promotional items, and resists scratching.',
-    image:
-      'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80',
+    image: UV_PRINT_IMAGE,
     tag: 'Rigid Substrates & Tech',
     substrates: ['Cast Acrylic', 'Solid Hardwood', 'Anodized Aluminum', 'Tempered Glass'],
     bestFor: 'VIP desk plaques, branded electronics, wood gifts & awards',
@@ -376,8 +382,7 @@ export const NINE_PROCESSES: InHouseProcess[] = [
     title: 'Vinyl Cutting',
     description:
       'Precision-cut adhesive vinyl for wall branding, vehicle graphics, window work and signage lettering.',
-    image:
-      'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80',
+    image:VINYL_PRINT_IMAGE,
     tag: 'Fleet & Architectural',
     substrates: ['Polymeric Cast Vinyl', 'Frosted Privacy Film', 'Reflective Safety Sheeting'],
     bestFor: 'Fleet wraps, frosted boardroom privacy & storefront glass',
@@ -387,8 +392,7 @@ export const NINE_PROCESSES: InHouseProcess[] = [
     title: 'DTF Printing',
     description:
       'Direct-to-film transfers that carry full-colour, detailed artwork onto fabric: including blends that resist conventional screen printing.',
-    image:
-      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80',
+    image:DTF_IMAGE,
     tag: 'Direct-To-Film Textile',
     substrates: ['100% Combed Cotton', 'Poly-Cotton Blends', 'Heavyweight Canvas', 'Spandex'],
     bestFor: 'Multi-colour graphic tees, detailed event apparel & hoodies',
@@ -409,8 +413,7 @@ export const NINE_PROCESSES: InHouseProcess[] = [
     title: 'Large Format Printing',
     description:
       'Wide-format output for banners, billboards, roll-ups, gazebos and building wraps at full outdoor scale.',
-    image:
-      'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80',
+    image: LARGE_PRINTING_IMAGE,
     tag: 'Outdoor & Structural Media',
     substrates: ['Heavy PVC Tarpaulin', 'Seamless Tension Fabric', 'Wind-Permeable Mesh'],
     bestFor: 'Highway billboards, summit backdrops, teardrops & gazebos',
@@ -420,30 +423,27 @@ export const NINE_PROCESSES: InHouseProcess[] = [
     title: 'Embroidery',
     description:
       'Stitched branding for caps, polos, jackets and uniforms: the finish corporate clients expect where a print would wear off.',
-    image:
-      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1200&q=80',
+    image: EMBROIDERY_IMAGE,
     tag: 'Multi-Needle Dimensional',
     substrates: ['Structured Cotton Twill', 'Knitted Piqué', 'Heavy Softshell Fleece'],
     bestFor: 'Corporate caps, executive polo shirts & field team jackets',
   },
   {
     number: '08',
-    title: 'Fiber Marking',
+    title: 'Laser Engraving',
     description:
-      'Laser marking that engraves permanently into metal and hard substrates: for name tags, tools, trophies and asset tagging.',
-    image:
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
-    tag: 'Precision Fiber Laser',
-    substrates: ['Stainless Steel', 'Anodized Aluminum', 'Brass Hardware', 'Rigid Polymers'],
-    bestFor: 'Metal water flasks, executive pen barrels & security asset tags',
+      'Precision engraving for corporate gifts, plaques, trophies, signage, metal items, wood products, and branded merchandise.',
+    image: LASER_ENGRAVING_IMAGE,
+    tag: 'Precision Laser Etching',
+    substrates: ['Anodized Aluminum', 'Solid Hardwood', 'Acrylic & Glass'],
+    bestFor: 'Corporate awards, executive gifts, signage & branded merchandise',
   },
   {
     number: '09',
     title: 'Sublimation',
     description:
       'Dye bonded into the material itself rather than sitting on top: used for mugs, flasks, mousepads and polyester apparel that will not crack or peel.',
-    image:
-      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80',
+    image: SUBLIMATION_IMAGE,
     tag: 'Molecular Dye Infusion',
     substrates: ['Coated Ceramic & Stoneware', 'Polymer Mousepads', 'Woven Lanyards'],
     bestFor: 'Corporate ceramic mugs, travel tumblers & event lanyards',
