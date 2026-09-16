@@ -75,7 +75,7 @@ export const Manifesto: React.FC = () => {
             <Award className="w-3.5 h-3.5" />
             <span>Experience</span>
           </div>
-          <div className="text-3xl sm:text-4xl font-serif letter-tight text-[#081c2d]">10+</div>
+          <div className="text-3xl sm:text-4xl font-serif letter-tight text-[#081c2d]">2+</div>
           <p className="text-xs text-[#081c2d]/60 leading-tight">Years helping businesses grow and stand out</p>
         </div>
 
@@ -84,7 +84,7 @@ export const Manifesto: React.FC = () => {
             <CheckCircle2 className="w-3.5 h-3.5" />
             <span>Brands Built</span>
           </div>
-          <div className="text-3xl sm:text-4xl font-serif letter-tight text-[#081c2d]">140+</div>
+          <div className="text-3xl sm:text-4xl font-serif letter-tight text-[#081c2d]">10+</div>
           <p className="text-xs text-[#081c2d]/60 leading-tight">Unique brand identities created with care</p>
         </div>
 
@@ -93,7 +93,7 @@ export const Manifesto: React.FC = () => {
             <Printer className="w-3.5 h-3.5" />
             <span>Items Printed</span>
           </div>
-          <div className="text-3xl sm:text-4xl font-serif letter-tight text-[#081c2d]">850k+</div>
+          <div className="text-3xl sm:text-4xl font-serif letter-tight text-[#081c2d]">50+</div>
           <p className="text-xs text-[#081c2d]/60 leading-tight">Quality pieces printed and delivered</p>
         </div>
 

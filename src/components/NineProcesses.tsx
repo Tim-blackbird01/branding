@@ -38,7 +38,7 @@ export const NineProcesses: React.FC<NineProcessesProps> = ({
     <section
       id="nine-processes"
       data-theme="dark"
-      className={`py-20 sm:py-28 lg:py-32 px-4 sm:px-8 lg:px-14 bg-[#081c2d] text-[#f5f7fa] relative overflow-hidden scroll-mt-20 ${className}`}
+      className={`py-20 sm:py-28 lg:py-32 px-4 sm:px-8 lg:px-14 bg-[#f5f7fa] text-[#081c2d] relative overflow-hidden scroll-mt-20 ${className}`}
     >
       {/* Ambient Atelier Glow in Background */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 rounded-full bg-[#1f7a63]/10 blur-3xl pointer-events-none" />

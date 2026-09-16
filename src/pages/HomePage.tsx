@@ -17,7 +17,7 @@ export const HomePage: React.FC = () => {
       <AboutIntro />
 
       {/* 3. Trusted By Social Proof Marquee */}
-      <TrustedBy />
+      {/*ustedBy />*/}
 
       {/* 4. What We Do (Soft White Background) */}
       <WhatWeDo sectionNumber="01 / What We Do" theme="light" />
