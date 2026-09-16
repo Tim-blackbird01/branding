@@ -18,9 +18,9 @@
 
 <p align="center">
   <img
-    src="images/logo.png"
-    alt="ShelterBrand Homepage"
-    width="100%"
+    src="src/assets/images/logo.png"
+    alt="ShelterBrand Logo"
+    width="220"
   />
 </p>
 
