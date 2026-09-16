@@ -36,31 +36,31 @@ export const NineProcesses: React.FC<NineProcessesProps> = ({
 
   return (
     <section
-      id="nine-processes"
-      data-theme="dark"
-      className={`py-20 sm:py-28 lg:py-32 px-4 sm:px-8 lg:px-14 bg-[#f5f7fa] text-[#081c2d] relative overflow-hidden scroll-mt-20 ${className}`}
-    >
+  id="nine-processes"
+  data-theme="light"
+  className={`py-20 sm:py-28 lg:py-32 px-4 sm:px-8 lg:px-14 bg-[#f5f7fa] text-[#081c2d] relative overflow-hidden scroll-mt-20 ${className}`}
+> 
       {/* Ambient Atelier Glow in Background */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 rounded-full bg-[#1f7a63]/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 -left-40 w-96 h-96 rounded-full bg-[#1f7a63]/10 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 sm:pb-12 border-b border-white/10">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 sm:pb-12 border-b border-[#081c2d]/10">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1f7a63]" />
-              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] font-mono text-[#9aa3a8]">
-                {sectionNumber}
-              </span>
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] font-mono text-[#081c2d]/60">
+  {sectionNumber}
+</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif letter-tight text-[#f5f7fa]">
-              Nine processes. One roof.
-            </h2>
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif letter-tight text-[#1f7a63]">
+  Nine processes. One roof.
+</h2>
           </div>
 
           <div className="max-w-lg">
-            <p className="text-xs sm:text-sm text-[#9aa3a8]/90 font-sans leading-relaxed mb-4">
+            <p className="text-xs sm:text-sm text-[#081c2d]/75 font-sans leading-relaxed mb-4">
               Most Nairobi suppliers broker jobs across scattered third-party workshops. Every single process below runs directly inside our own Ngara atelier: guaranteeing color fidelity, uncompromised quality control, and hard-deadline delivery.
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1f7a63]/15 border border-[#1f7a63]/30 text-[11px] font-mono text-[#1f7a63]">
@@ -73,13 +73,13 @@ export const NineProcesses: React.FC<NineProcessesProps> = ({
         {/* Process Counter and Filter Tabs */}
         <div className="mt-8 mb-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <span className="text-xs font-mono text-[#9aa3a8]">
-              Featuring <span className="text-[#1f7a63] font-semibold">{NINE_PROCESSES.length}</span> In-House Disciplines
-            </span>
-            <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-white/20" />
-            <span className="hidden sm:inline-block text-[11px] font-mono text-white/40">
-              Ngara Workshop · Nairobi
-            </span>
+            <span className="text-xs font-mono text-[#081c2d]/70">
+  Featuring <span className="text-[#1f7a63] font-semibold">{NINE_PROCESSES.length}</span> In-House Disciplines
+</span>
+            <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-[#081c2d]/20" />
+<span className="hidden sm:inline-block text-[11px] font-mono text-[#081c2d]/50">
+  Ngara Workshop · Nairobi
+</span>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -107,7 +107,7 @@ export const NineProcesses: React.FC<NineProcessesProps> = ({
                   className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all cursor-pointer ${
                     isActive
                       ? 'bg-[#1f7a63] text-white shadow-md font-semibold'
-                      : 'bg-white/5 hover:bg-white/10 text-[#f5f7fa]/70 border border-white/10'
+                      : 'bg-white hover:bg-slate-50 text-[#081c2d]/70 border border-[#081c2d]/15 shadow-sm'
                   }`}
                 >
                   {cat}
