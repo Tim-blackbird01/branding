@@ -5,11 +5,14 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { CaseStudyModal } from './components/CaseStudyModal';
+import { Process } from './components/Process';
+import { Seo } from './components/Seo';
 import { Project } from './types';
 
 // Distinct Pages
 import { HomePage } from './pages/HomePage';
 import { WorkPage } from './pages/WorkPage';
+import { WorkDetailPage } from './pages/WorkDetailPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { AboutPage } from './pages/AboutPage';
 import { WhyUsPage } from './pages/WhyUsPage';
@@ -41,9 +44,18 @@ const AnimatedRoutes: React.FC<AnimatedRoutesProps> = ({ onSelectProject }) => {
             path="/work"
             element={<WorkPage onSelectProject={onSelectProject} />}
           />
+          <Route path="/work/:slug" element={<WorkDetailPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/process" element={<Navigate to="/services" replace />} />
+          <Route
+            path="/process"
+            element={
+              <Process
+                sectionNumber="04 / Branding Process"
+                subtitle="How ShelterBrand works"
+              />
+            }
+          />
           <Route path="/why" element={<Navigate to="/about" replace />} />
           <Route path="/contact" element={<ContactPage />} />
 
@@ -57,6 +69,7 @@ const AnimatedRoutes: React.FC<AnimatedRoutesProps> = ({ onSelectProject }) => {
 
 export default function App() {
   const [activeCaseStudy, setActiveCaseStudy] = useState<Project | null>(null);
+  const location = useLocation();
 
   const handleSelectProject = (project: Project) => {
     setActiveCaseStudy(project);
@@ -68,6 +81,7 @@ export default function App() {
 
   return (
     <Router>
+      <Seo />
       <div className="min-h-screen bg-[#f5f7fa] text-[#081c2d] font-sans selection:bg-[#1f7a63] selection:text-[#f5f7fa] relative flex flex-col justify-between">
         {/* Scroll To Top on Route Changes */}
         <ScrollToTop />
@@ -84,10 +98,12 @@ export default function App() {
         <Footer />
 
         {/* Case Study Detail Modal (Accessible from portfolio pages) */}
-        <CaseStudyModal
-          project={activeCaseStudy}
-          onClose={handleCloseCaseStudy}
-        />
+        {!location.pathname.startsWith('/work/') && (
+          <CaseStudyModal
+            project={activeCaseStudy}
+            onClose={handleCloseCaseStudy}
+          />
+        )}
       </div>
     </Router>
   );
